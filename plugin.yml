@@ -2,5 +2,15 @@ name: CustomGoals
 main: com.eavoron.sanchez.CustomGoalsHead
 version: 1.0
 api-version: 1.15
+permissions:
+  customgoals.command:
+   description: Allows you to use the command /test
+   default: op
 commands:
-softdepend: [PlaceholderAPI, LuckPerms]
+  customgoals:
+   aliases: cg
+   description: Main plugin to control server-wide goals.
+   usage: "Usage /customgoals new Goal_name Start_value Target_value\n/customgoals update Goal_name Update_value\n/customgoals remove Goal_name"
+   permission: customgoals.command
+   permission-message: You do not have permission to use this command.
+softdepend: [PlaceholderAPI]

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>CustomGoalsPlugin</name>
-	<comment>Project CustomGoalsPlugin created by Buildship.</comment>
+	<name>CustomGoals</name>
+	<comment>Project CustomGoals created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>

@@ -9,25 +9,27 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    
 }
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-    mavenCentral()
-    mavenLocal()
-    maven {
+        maven {
         url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
     }
+    mavenCentral()
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+
+    	
 }
 
 dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT'
     compileOnly 'net.luckperms:api:5.0'
     compileOnly 'me.clip:placeholderapi:2.10.9'
-	compileOnly 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT' 
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
 
